@@ -1,5 +1,30 @@
 @import url('simplelightbox/dist/simple-lightbox.min.css');
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  padding-bottom: 10px;
+}
+
+.nav-item:hover .nav-link {
+  color: sienna;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+}
+
 /* Gallery */
 .gallery {
   list-style: none;
