@@ -1,1 +1,101 @@
+@import url('simplelightbox/dist/simple-lightbox.min.css');
 
+/* Gallery */
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  transition-duration: 0.5s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-link {
+  display: flex;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 260px;
+  height: 150px;
+}
+
+/* Form */
+form,
+input,
+textarea,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5rem;
+  color: rgba(46, 47, 66, 1);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-field {
+  width: 360px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+  transition-duration: 100ms;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 7px 16px;
+}
+
+.input-field:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: rgba(128, 128, 128, 1);
+}
+
+.textarea-field {
+  height: 80px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+.btn {
+  background-color: rgba(78, 117, 255, 1);
+  border-radius: 8px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  transition-duration: 250ms;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.btn:hover {
+  background-color: rgba(108, 140, 255, 1);
+}

@@ -9,6 +9,31 @@
   </head>
   <body>
 
-    <script src="./js/2-form.js"></script>
+  <form class="feedback-form" autocomplete="off">
+    <label for="email">
+      Email
+      <input
+        class="input-field"
+        name="email"
+        type="email"
+        id="email"
+        placeholder="Your email"
+        autofocus
+      />
+    </label>
+
+    <label for="message">
+      Message
+      <textarea
+        class="input-field textarea-field"
+        name="message"
+        id="message"
+        placeholder="Your message"
+      ></textarea>
+    </label>
+    <button class="btn" type="submit">Submit</button>
+  </form>
+
+  <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
